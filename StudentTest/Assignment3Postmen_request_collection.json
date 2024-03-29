@@ -1,0 +1,939 @@
+{
+	"info": {
+		"_postman_id": "9ce01d9b-cc7c-4715-8751-ba8eddbb7006",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33004630"
+	},
+	"item": [
+		{
+			"name": ".net project",
+			"item": [
+				{
+					"name": "https://localhost:7045/api/Users/CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"Jay\",\r\n    \"userEmail\":\"juat@gmail.com\",\r\n    \"Password\":\"jay@123\",\r\n    \"userShippingAddress\":\"Regina street Waterloo\",\r\n    \"userPurchaseHistory\":\"1. pixel buds pro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Users/CreateUser",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"CreateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Users/GetUserList",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Users/DeleteUser?id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"DeleteUser"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Users/DeleteUser?id=10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Users/DeleteUser?id=10",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"DeleteUser"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Users/GetUserList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Users/GetUserList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"GetUserList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Users/UpdateUser?Id=1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":1,\r\n    \"userName\":\"Kush\",\r\n    \"userEmail\":\"juat@gmail.com\",\r\n    \"Password\":\"Kush@123\",\r\n    \"userShippingAddress\":\"Regina street Waterloo\",\r\n    \"userPurchaseHistory\":\"1. pixel buds pro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Users/UpdateUser?Id=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"UpdateUser"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Users/UpdateUser?Id=8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":8,\r\n    \"userName\":\"Kush\",\r\n    \"userEmail\":\"juat@gmail.com\",\r\n    \"Password\":\"Kush@123\",\r\n    \"userShippingAddress\":\"Regina street Waterloo\",\r\n    \"userPurchaseHistory\":\"1. pixel buds pro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Users/UpdateUser?Id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Users",
+								"UpdateUser"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/CreateOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderUserID\":2,\r\n    \"orderProductID\":2,\r\n    \"OrderQTY\":3,\r\n    \"orderTotal\":2599\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/CreateOrder",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"CreateOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/GetOrderList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/GetOrderList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"GetOrderList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/DeleteOrder?Id=2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/DeleteOrder?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"DeleteOrder"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/DeleteOrder?Id=8",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/DeleteOrder?Id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"DeleteOrder"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/UpdateOrder?Id=3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":3,\r\n    \"orderUserID\":1,\r\n    \"orderProductID\":2,\r\n    \"OrderQTY\":3,\r\n    \"orderTotal\":2599\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/UpdateOrder?Id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"UpdateOrder"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Orders/UpdateOrder?Id=3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":3,\r\n    \"orderUserID\":1,\r\n    \"orderProductID\":2,\r\n    \"OrderQTY\":3,\r\n    \"orderTotal\":2599\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Orders/UpdateOrder?Id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Orders",
+								"UpdateOrder"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/CreateCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartUserID\":1,\r\n    \"cartProdutID\":1,\r\n    \"productQty\":1,\r\n    \"cartTotal\":359\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/CreateCart",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"CreateCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/GetCartList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/GetCartList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"GetCartList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/UpdateCart?Id=2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":2,\r\n    \"cartUserID\":3,\r\n    \"cartProdutID\":3,\r\n    \"productQty\":1,\r\n    \"cartTotal\":599\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/UpdateCart?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"UpdateCart"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/UpdateCart?Id=6",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\":6,\r\n    \"cartUserID\":3,\r\n    \"cartProdutID\":3,\r\n    \"productQty\":1,\r\n    \"cartTotal\":599\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/UpdateCart?Id=6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"UpdateCart"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/DeleteCart?Id=2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/DeleteCart?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"DeleteCart"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Carts/DeleteCart?Id=8",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Carts/DeleteCart?Id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Carts",
+								"DeleteCart"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/CreateComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commentUserID\":2,\r\n    \"commentProductID\":1,\r\n    \"userRating\":2.6,\r\n    \"commentImages\":\"commentimage2.jpg\",\r\n    \"CommentText\":\"not long batterylife\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/CreateComment",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"CreateComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/GetCommentList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/GetCommentList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"GetCommentList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/UpdateComment?Id=2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 2,\r\n    \"commentUserID\": 2,\r\n    \"commentProductID\": 1,\r\n    \"userRating\": 3.5,\r\n    \"commentImages\": \"commentimage3.jpg\",\r\n    \"commentText\": \"good batterylife\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/UpdateComment?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"UpdateComment"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/UpdateComment?Id=8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 2,\r\n    \"commentUserID\": 2,\r\n    \"commentProductID\": 1,\r\n    \"userRating\": 3.5,\r\n    \"commentImages\": \"commentimage3.jpg\",\r\n    \"commentText\": \"good batterylife\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/UpdateComment?Id=8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"UpdateComment"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/DeleteComment?Id=5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/DeleteComment?Id=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"DeleteComment"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Comments/DeleteComment?Id=2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7045/api/Comments/DeleteComment?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Comments",
+								"DeleteComment"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/GetProductList",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/GetProductList",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"GetProductList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/CreateProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"pixel 6\",\r\n    \"productDescription\": \"AI powered\",\r\n    \"productImage\": \"pixel6.jpg\",\r\n    \"productPrice\": 899,\r\n    \"productShippingCost\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/CreateProduct",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"CreateProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/UpdateProduct?Id=3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"productName\": \"pixel 9\",\r\n    \"productDescription\": \"AI powered\",\r\n    \"productImage\": \"pixel6.jpg\",\r\n    \"productPrice\": 899,\r\n    \"productShippingCost\": 99\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/UpdateProduct?Id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"UpdateProduct"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/DeleteProduct?Id=4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"pixel 6\",\r\n    \"productDescription\": \"AI powered\",\r\n    \"productImage\": \"pixel6.jpg\",\r\n    \"productPrice\": 899,\r\n    \"productShippingCost\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/DeleteProduct?Id=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"DeleteProduct"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/DeleteProduct?Id=4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"pixel 6\",\r\n    \"productDescription\": \"AI powered\",\r\n    \"productImage\": \"pixel6.jpg\",\r\n    \"productPrice\": 899,\r\n    \"productShippingCost\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/DeleteProduct?Id=6",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"DeleteProduct"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:7045/api/Products/UpdateProduct?Id=4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"productName\": \"pixel 9\",\r\n    \"productDescription\": \"AI powered\",\r\n    \"productImage\": \"pixel6.jpg\",\r\n    \"productPrice\": 899,\r\n    \"productShippingCost\": 99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7045/api/Products/UpdateProduct?Id=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7045",
+							"path": [
+								"api",
+								"Products",
+								"UpdateProduct"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
